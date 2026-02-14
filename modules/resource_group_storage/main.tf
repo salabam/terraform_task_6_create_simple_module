@@ -14,6 +14,7 @@ resource "azurerm_resource_group" "this" {
 
 resource "azurerm_storage_account" "this" {
   # в чеклісті нема вимого до валідацій, апрув таску, не вигадуй нових вимог на льоту!!
+  # конфюзить явно менше ніж твої зауваження
   name                     = var.storage_account_name
   resource_group_name      = azurerm_resource_group.this.name
   location                 = azurerm_resource_group.this.location
