@@ -12,7 +12,7 @@ provider "azurerm" {
 }
 
 module "resource_group_storage" {
-  source               = "salabam/resource_group_storage/azurerm"
+  source               = "salabam/resource-group-storage/azurerm"
   resource_group_name  = var.resource_group_name
   storage_account_name = var.storage_account_name
   location             = var.location
